@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.oryan.testapp1.SpeechActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nothing Yet"
+        android:id="@+id/feedbackBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="152dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:id="@+id/backButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Playback"
+        android:id="@+id/playbackButton"
+        android:layout_above="@+id/backButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="214dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stop"
+        android:id="@+id/stopButton"
+        android:layout_above="@+id/playbackButton"
+        android:layout_toRightOf="@+id/feedbackBox"
+        android:layout_toEndOf="@+id/feedbackBox"
+        android:layout_marginBottom="124dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SR Mode"
+        android:id="@+id/modeSwitch"
+        android:layout_alignTop="@+id/stopButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Awaiting Command"
+        android:id="@+id/responseBox"
+        android:layout_marginTop="239dp"
+        android:layout_below="@+id/feedbackBox"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contactsPane"
+        android:layout_above="@+id/backButton"
+        android:layout_toLeftOf="@+id/responseBox"
+        android:layout_toStartOf="@+id/responseBox"
+        android:layout_below="@+id/stopButton"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request Confirmation"
+        android:id="@+id/confirmSwitch"
+        android:layout_below="@+id/modeSwitch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        android:checked="false"/>
+
+</RelativeLayout>

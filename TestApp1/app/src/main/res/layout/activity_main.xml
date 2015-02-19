@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Press Me"
+        android:id="@+id/testButton"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/testText"
+        android:id="@+id/testBox"
+        android:layout_below="@+id/testButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Button"
+        android:id="@+id/nextButton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mockup"
+        android:id="@+id/gotoMockupButton"
+        android:layout_marginBottom="98dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth"
+        android:id="@+id/gotoBlueButton"
+        android:layout_above="@+id/gotoMockupButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="82dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speech"
+        android:id="@+id/goToSpeechButton"
+        android:layout_below="@+id/nextButton"
+        android:layout_alignLeft="@+id/gotoMockupButton"
+        android:layout_alignStart="@+id/gotoMockupButton"
+        android:layout_marginTop="93dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth 2"
+        android:id="@+id/gotoBlue2Button"
+        android:layout_above="@+id/nextButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="92dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="130dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notifier"
+        android:id="@+id/goToNoteButton"
+        android:layout_marginTop="63dp"
+        android:layout_alignTop="@+id/gotoBlue2Button"
+        android:layout_alignRight="@+id/gotoBlueButton"
+        android:layout_alignEnd="@+id/gotoBlueButton"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:id="@+id/goToPhoneButton"
+        android:layout_alignTop="@+id/gotoBlue2Button"
+        android:layout_alignLeft="@+id/testButton"
+        android:layout_alignStart="@+id/testButton"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voice"
+        android:id="@+id/gotoVoiceButton"
+        android:layout_below="@+id/testBox"
+        android:layout_alignRight="@+id/gotoBlue2Button"
+        android:layout_alignEnd="@+id/gotoBlue2Button"
+        android:layout_marginTop="66dp"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="debug"
+        android:id="@+id/goToDebugButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Debug2"
+        android:id="@+id/goToDebugButton2"
+        android:layout_alignTop="@+id/testButton"
+        android:layout_alignRight="@+id/goToDebugButton"
+        android:layout_alignEnd="@+id/goToDebugButton"/>
+
+</RelativeLayout>
